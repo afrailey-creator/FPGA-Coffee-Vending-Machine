@@ -1,0 +1,27 @@
+# Quartus auto-generated build directories
+db/
+incremental_db/
+output_files/
+simulation/
+
+# Questa/ModelSim work libraries
+work/
+*.wlf
+transcript
+
+# Quartus backup/lock files
+*.bak
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.done
+*.jdi
+*.pin
+*.sof
+*.pof
+
+# OS/editor cruft
+.DS_Store
+Thumbs.db
+*~
