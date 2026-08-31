@@ -28,3 +28,4 @@ C     = S[2] & S[0]
 ## Tradeoff
 
 This form is compact and efficient — few gates, minimal logic depth — but it's not very readable. Confirming correctness means mentally evaluating each Boolean expression for every reachable state; there's no direct visual correspondence between the code and the state diagram. See Method 2 (`coffee_fsm_case.v`) for the more spec-readable alternative, which was verified to produce identical simulation results across all 4 test cases.
+
