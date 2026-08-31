@@ -41,8 +41,8 @@ C = S[2] & S[0]
 
 This project intentionally implements the same FSM two different ways, to compare them directly:
 
-- **`coffee_fsm_equations.v` (equation-based):** Next-state and output logic written as minimized Boolean `assign` statements derived from K-maps. Tests whether manual logic minimization is correct.
-- **`coffee_fsm_case.v` (behavioral/case-based):** Same FSM written with `case` statements in `always` blocks instead of minimized equations. Tests whether both descriptions produce identical simulation results — if they don't, either the K-map minimization or the case logic has an error.
+- **`coffee_fsm_equations.v` (METHOD 1: equation-based):** Next-state and output logic written as minimized Boolean `assign` statements derived from K-maps. Tests whether manual logic minimization is correct.
+- **`coffee_fsm_case.v` (METHOD 2: behavioral/case-based):** Same FSM written with `case` statements in `always` blocks instead of minimized equations. Tests whether both descriptions produce identical simulation results — if they don't, either the K-map minimization or the case logic has an error.
 
 Both must be simulated against the same testbench and produce identical `O`, `C`, `S` trajectories.
 
